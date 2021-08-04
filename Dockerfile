@@ -20,7 +20,10 @@ RUN apt update && apt install --yes \
     shellcheck \
     zlib1g-dev
 RUN pip install \
-    jsonschema
+    jsonschema \
+    fastapi \
+    uvicorn \
+    requests
 # Install ShellSpec
 RUN curl --fail --location https://git.io/shellspec --show-error --silent | sh -s -- --yes
 RUN shellspec --init
