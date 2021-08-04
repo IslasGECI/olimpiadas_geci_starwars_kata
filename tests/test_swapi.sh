@@ -3,7 +3,7 @@
 # Tests the SWAPI API
 
 source src/helper.sh
-export API_URL="https://swapi.dev/api/"
+export API_URL="http://localhost/api/"
 
 # Test the people endpoint
 test_name="Person 1 is equal to expected person"
