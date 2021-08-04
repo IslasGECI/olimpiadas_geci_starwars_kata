@@ -10,7 +10,7 @@ def read_root():
 
 
 @app.get("/api/{item}/{number}/")
-def people_1(item,number):
+def get_from_swapi(item,number):
     url=f"https://swapi.dev/api/{item}/{number}/"
     r = requests.get(url)
     return r.json()
