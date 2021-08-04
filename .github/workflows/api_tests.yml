@@ -17,6 +17,6 @@ jobs:
     - name: Construye imagen
       run: docker build --tag islasgeci .
     - name: Start app
-      run: docker run --detach --name nombre_contenedor islasgeci make start
+      run: docker run --detach --name name_container islasgeci make start
     - name: Run API tests
-      run: docker exec nombre_contenedor make tests_api
+      run: docker exec name_container make tests_api
