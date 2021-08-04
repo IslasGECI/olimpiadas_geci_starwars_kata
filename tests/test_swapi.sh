@@ -34,8 +34,8 @@ test_case "${test_name}" "${test_function}" "${endpoint}" "${expected_json}"
 test_name="Planet 2 is valid"
 test_function="validate_json"
 endpoint="planets/2/"
-schema="tests/swapi-planets-schema.json"
-test_case "${test_name}" "${test_function}" "${endpoint}" "${expected_json}"
+expected_schema="tests/swapi-planets-schema.json"
+test_case "${test_name}" "${test_function}" "${endpoint}" "${expected_schema}"
 
 # Test the starships endpoint
 test_name="Starship 9 is equal to expected starship"
