@@ -18,5 +18,7 @@ jobs:
       run: docker build --tag islasgeci .
     - name: Start app
       run: docker run --detach --name name_container islasgeci make start
+    - name: Wait for api to start
+      run: sleep 10
     - name: Run API tests
       run: docker exec name_container make tests_api
