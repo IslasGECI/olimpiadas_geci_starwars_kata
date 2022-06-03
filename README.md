@@ -1,3 +1,5 @@
+<img src="https://www.islas.org.mx/img/logo.svg" align="right" width="256" />
+
 # Star Wars Kata
 
 1. Press the button _Use this template_ and create a new repository from this template
